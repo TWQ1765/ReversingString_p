@@ -1,23 +1,39 @@
 #include "ReverseString.h"
-
+#include <stdio.h>
 
 int getStringLength(char *str)
 {
-	/*
+	///*
 	int i = 0;
-	//int lenNUM;
-	for (i ; i <  ; i++){
-		//str++;
-		if (str[i] == "/n")
+	int lenNUM = 1;
+	//char *strptr = str;
+	while (i < lenNUM){
+		
+		if ((str[i]) != '\n')
 		{
-			return i;
-			
+			lenNUM++;
+			i++;
 		}
 		else {
+			return --lenNUM;
 			
-			return  0;
 		}
-	}*/
+	}
+	//*/
+	//return 011122;
+}
+/*
+char trygetStringLength(char *str)
+{
+	char result;
+	str[1] = result;
+	return result;
+}
+*/
+
+char* tryPiontSomething(char *str)
+{
+	char *ptr = str;
 	
-	return 0;
+	return ptr;
 }
