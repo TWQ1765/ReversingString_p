@@ -44,15 +44,13 @@ int getStringLength(char *str)
 */
 char *ReverseString(char* str){
 	
-	
 	int stringLen = getStringLength(str);
-	char temp[256];
+	 char temp[256];
 	char *readString = str;
-	char *reverse = temp;
+	 char *reverse = temp;
 	for (int i=0 ; i < stringLen ; i++)
 	{
-		temp[stringLen - i] = readString[i];
-		
+		temp[(stringLen - i)-1] = readString[i];
 	}
 	return reverse;
 }
