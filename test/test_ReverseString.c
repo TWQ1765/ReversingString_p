@@ -23,29 +23,33 @@ void test_getStringLength_given_a_NULL_expect_0(void)
 	printf("ptrptr point to addr: %x\n",ptrptr);
 	printf("ptrptr point to another pionter at addr: %x\n",*ptrptr);
 	understands end*/
+	
 	/*trying more pionter
 	char *tr = "ali,abu,akao,abing,abet,aboh";
-	
 	printf("*tr is the addr: %x\n",&tr);
 	printf("tr is point to: %x\n",tr);
 	printf("tr dereference is: %d\n",*tr);
 	printf("try get ali : %s\n",&tr[0]);
 	end trying*/
 	
-	printf("size of an integer %d", sizeof(int));//just see size of int
+	///*
+	printf("integer NULL is %d\n", NULL);
+	printf("string NULL is %s\n", NULL);
+	//*/
+	printf("size of an integer %d\n", sizeof(int));//just see size of int
 	
-    TEST_ASSERT_EQUAL(0,getStringLength("abc"));
+    TEST_ASSERT_EQUAL(0,getStringLength(NULL));
 }
 
 void test_getStringLength_given_an_empty_string_expect_0(void)
 {
-   // TEST_ASSERT_EQUAL_STRING("",str);
+	TEST_ASSERT_EQUAL(0,getStringLength(""));
 }void test_getStringLength_given_an_empty_string_expect_1(void)
 {
-    //TEST_ASSERT_EQUAL_STRING("f",str);
+    TEST_ASSERT_EQUAL(1,getStringLength("f"));
 }void test_getStringLength_given_a_string_expect_11(void)
 {
-    //TEST_ASSERT_EQUAL_STRING("",str);
+    TEST_ASSERT_EQUAL(11,getStringLength("mumbo-jumbo"));
 }
 
 /*

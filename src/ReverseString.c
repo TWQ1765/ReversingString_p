@@ -1,26 +1,34 @@
 #include "ReverseString.h"
 #include <stdio.h>
+#include <string.h>
 
 int getStringLength(char *str)
 {
-	///*
 	int i = 0;
 	int lenNUM = 1;
-	//char *strptr = str;
-	while (i < lenNUM){
-		
-		if ((str[i]) != '\n')
+	char temp[256];
+	if ((str == '\0') || (str == NULL))
+	{
+		return 0;
+	}
+	else
+	{
+		strcpy(temp, str);
+		while (i < lenNUM)
 		{
-			lenNUM++;
-			i++;
-		}
-		else {
-			return --lenNUM;
-			
+		
+			if ((temp[i]) != '\0')
+			{
+				lenNUM++;
+				i++;
+			}
+			else 
+			{
+				i = 0;
+				return --lenNUM;
+			}
 		}
 	}
-	//*/
-	//return 011122;
 }
 /*
 char trygetStringLength(char *str)
