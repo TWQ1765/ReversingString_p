@@ -2,6 +2,8 @@
 #define _REVERSESTRING_H
 
 int getStringLength(char *str);
+char *ReverseString(char* str);
+
 char trygetStringLength(char *str);
 char* tryPiontSomething(char *str);
 

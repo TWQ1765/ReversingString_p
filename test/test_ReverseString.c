@@ -52,18 +52,14 @@ void test_getStringLength_given_an_empty_string_expect_0(void)
     TEST_ASSERT_EQUAL(11,getStringLength("mumbo-jumbo"));
 }
 
-/*
+
 void test_ReverseString_given_framework_expect_krowemarf(void)
 {
 	char *str = ReverseString("framework");
-    TEST_ASSERT_EQUAL_STRING("framework",str);
-}*/
-
-void test_trygetStringLength_given_a_string_expect_f(void)
-{
-	//char str = trygetStringLength("framework");
-	//TEST_ASSERT_EQUAL_STRING("f",str);
+    TEST_ASSERT_EQUAL_STRING("krowemarf",str);
 }
+
+
 
 void test_tryPiontSomething_given_a_string_expect_true(void)
 {
