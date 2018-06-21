@@ -1,6 +1,7 @@
 #include "ReverseString.h"
 #include <stdio.h>
 #include <string.h>
+#include <malloc.h>
 /*Challenge: 
 *	1.)	testing input with NULL is a problem:
 *		a.) 	use if else statement to filter it. 
@@ -45,14 +46,18 @@ int getStringLength(char *str)
 char *ReverseString(char* str){
 	
 	int stringLen = getStringLength(str);
-	 char temp[256];
+	char *temp;
+	temp = (char*)malloc(stringLen+1);
 	char *readString = str;
-	 char *reverse = temp;
+	
 	for (int i=0 ; i < stringLen ; i++)
 	{
 		temp[(stringLen - i)-1] = readString[i];
 	}
-	return reverse;
+	
+	temp[stringLen] = '\0'; // to remove extral char
+	
+	return temp;
 }
 
 

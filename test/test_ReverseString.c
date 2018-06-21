@@ -56,7 +56,9 @@ void test_getStringLength_given_an_empty_string_expect_0(void)
 void test_ReverseString_given_framework_expect_krowemarf(void)
 {
 	char *reverse_string = ReverseString("framework");
+	
     TEST_ASSERT_EQUAL_STRING("krowemarf",reverse_string);
+	free(reverse_string);
 }
 
 
